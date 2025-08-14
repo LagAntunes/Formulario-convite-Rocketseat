@@ -1,0 +1,10 @@
+:root {
+  --logo: 400 2.5rem / 1 "Leckerli One";
+
+  --heading-md: 700 1.8rem / 1 "Fuzzy Bubbles";
+  --heading-sm: 700 1.15rem / 1 "Fuzzy Bubbles";
+
+  --body-md: 400 1rem / 1 "Open Sans";
+  --body-sm: 400 0.875rem / 1 "Open Sans";
+  --body-xs: 400 0.75rem / 1 "Open Sans";
+}

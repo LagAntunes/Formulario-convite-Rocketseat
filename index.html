@@ -3,13 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <!--Estilos-->
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Formulário de convite - Rocketseat</title>
   </head>
   <body>
     <main>
-      <form></form>
+      <aside>
+        <img
+          src="./assets/images/Background.svg"
+          alt="Imagem de um bolo de aniversário"
+        />
+        <div class="aside-content">
+          <img src="./assets/images/Logo.svg" alt="Ícone de aniversário" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </div>
+      </aside>
+
+      <form>
+        <h2>Crie seu convite</h2>
+
+        <fieldset>
+          <div class="legend-wrapper">
+            <img src="./assets/icons/calendar.svg" alt="" />
+            <legend>Sobre o evento</legend>
+          </div>
+
+          <div class="input-wrapper grid-1">
+            <div class="input-wrapper-content">
+              <label for="title">Título</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Nome do evento"
+              />
+            </div>
+          </div>
+
+          <div class="input-wrapper grid-2">
+            <div class="input-wrapper-content">
+              <label for="initial_date">Data inicial</label>
+              <input type="date" id="initial_date" name="initial_date" />
+            </div>
+
+            <div class="input-wrapper-content">
+              <label for="final_date">Data final</label>
+              <input type="date" id="final_date" name="final_date" />
+            </div>
+          </div>
+
+          <div class="input-wrapper grid-2">
+            <div class="input-wrapper-content">
+              <label for="type-1">Tipo</label>
+              <div class="radio-wrapper">
+                <div class="radio-content">
+                  <input type="radio" id="type-1" name="type" />
+                  <span>Presencial</span>
+                </div>
+                <div class="radio-content">
+                  <input type="radio" id="type-2" name="type" />
+                  <span>Online</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper-content">
+              <label for="location">Local</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Link ou endereço"
+              />
+            </div>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="description">Descrição</label>
+            <textarea
+              name="description"
+              id="description"
+              placeholder="Escreva sobre os detalhes do evento"
+            ></textarea>
+          </div>
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>

@@ -1,0 +1,36 @@
+@import url("./form-elements/input-wrapper/index.css");
+@import url("./form-elements/textarea-wrapper/index.css");
+@import url("./form-elements/radio-wrapper/index.css");
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 67%;
+  height: 100vh;
+  padding: 80px 130px;
+  background-color: var(--shape-body);
+  border: 20px solid var(--shape-background);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  & h2 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+  }
+
+  & fieldset {
+    & .legend-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+
+      & legend {
+        font: var(--heading-sm);
+        color: var(--text-heading);
+      }
+    }
+  }
+}

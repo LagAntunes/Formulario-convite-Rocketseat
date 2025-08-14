@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}

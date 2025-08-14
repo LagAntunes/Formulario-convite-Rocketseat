@@ -1,0 +1,21 @@
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  & textarea {
+    min-height: 136px;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    padding: 12px;
+    resize: vertical;
+    font: var(--body-sm);
+    color: var(--input-placeholder);
+  }
+}

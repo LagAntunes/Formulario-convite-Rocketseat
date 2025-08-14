@@ -1,2 +1,5 @@
 @import url("./global.css");
 @import url("./variables.css");
+@import url("./typhografy.css");
+
+@import url("./main/index.css");

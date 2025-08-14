@@ -1,0 +1,85 @@
+.radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  height: 48px;
+  padding: 4px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+
+  & .radio-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+
+    & input[type="radio"] {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    & span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font: var(--body-sm);
+      color: var(--text-body);
+      position: relative;
+      pointer-events: none;
+
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &:has(#type-1) {
+      & span {
+        &::before {
+          content: url("../../../../../assets/icons/building-normal.svg");
+        }
+      }
+    }
+
+    &:has(#type-2) {
+      & span {
+        &::before {
+          content: url("../../../../../assets/icons/video-normal.svg");
+        }
+      }
+    }
+
+    &:has(input:checked) {
+      background-color: var(--shape-button);
+
+      &:has(#type-1) {
+        & span {
+          &::before {
+            content: url("../../../../../assets/icons/building-active.svg");
+          }
+        }
+      }
+
+      &:has(#type-2) {
+        & span {
+          &::before {
+            content: url("../../../../../assets/icons/video-active.svg");
+          }
+        }
+      }
+
+      & span {
+        color: var(--text-heading);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

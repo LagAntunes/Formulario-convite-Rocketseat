@@ -1,0 +1,11 @@
+@import url("./aside/index.css");
+@import url("./form/index.css");
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
